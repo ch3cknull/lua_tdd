@@ -1,0 +1,7 @@
+language: lua
+lua:
+  - 5.3
+sudo: required
+before_install: sudo apt-get install luarocks
+install: sudo luarocks install busted
+script: busted
